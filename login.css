@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #dfdfdf;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.35S;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url('img/a-patient-consults-a-doctor-and-nurse-free-vector.jpg');
+    background-position: center;
+    opacity: 0.25; /* Adjust opacity to make the login box more readable */
+}
+.background .h1{
+    z-index: 1;
+}
+
+.login-box {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px; 
+    padding: 40px; 
+   
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);   
+    backdrop-filter: blur(2px); 
+	
+}
+
+.login-header{
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+
+.login-header header{
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.input-box .input-field{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.05);
+    outline: none;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.input-field:focus{
+    box-shadow: 0px 8px 15px 1px rgba(0,0,0,0.1); /* Better shadow instead of resizing */
+    outline: none;
+}
+
+.submit-btn{
+    width: 100%;
+    height: 60px;
+    background: #f3ebeb; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.input-submit label{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background: #0056b3; /* Darker blue for hover */
+    transform: scale(1.02); /* Slight scaling effect */
+}
+
+    
+
+.sign-up-link{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+.sign-up-link a {
+    color: #007bff;
+}
+
+.sign-up-link a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-container select {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* cursor: pointer; */
+    transition: box-shadow 0.3s ease;
+}
+
+.dropdown-container select:hover,
+.dropdown-container select:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.dropdown-container::after {
+    
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    color: #007bff;
+}
